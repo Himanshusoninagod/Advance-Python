@@ -95,19 +95,43 @@
 # multi(1,2,3)
 
 
-def decorator(even_no):
-    def inner(p,q,r):
-        p=p-1
-        even_no(p,q,r)
-    return inner
-@decorator
-def even_no(start,stop,step):
-    for i in range(start,stop+1,step):
-        print(i)
-start=int(input("Enter starting value: "))
-stop=int(input("Enter ending value: "))
-step=int(input("Enter steps value: "))
-even_no(start,stop,step)
+# def decorator(even_no):
+#     def inner(p,q,r):
+#         p=p-1
+#         even_no(p,q,r)
+#     return inner
+
+# @decorator
+# def even_no(start,stop,step):
+#     for i in range(start,stop+1,step):
+#         print(i)
+
+# start=int(input("Enter starting value: "))
+# stop=int(input("Enter ending value: "))
+# step=int(input("Enter steps value: "))
+
+# even_no(start,stop,step)
+
+
+
+# def outer_fun(x):
+#     def inner_fun(p,q):
+#         p=p+5
+#         q=q+10
+#         res1=x(p,q)
+#         return res1
+#     return inner_fun
+
+# @outer_fun
+# def add(a,b):
+#     return a+b
+
+# num1=int(input("enter num1: "))
+# num2=int(input("enter num2: "))
+
+# result=add(num1,num2)
+# print(result)
+
 
 
    
